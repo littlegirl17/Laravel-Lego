@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tùy Chỉnh Mô Hình LEGO</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            canvas {
+                display: block;
+            }
+            #controls {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="controls">
+            <button id="addBlock">Thêm Khối LEGO</button>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script>
+            let scene, camera, renderer;
+            let blocks = [];
+            let selectedBlock = null;
+            let raycaster = new THREE.Raycaster();
+            let mouse = new THREE.Vector2();
+            let plane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0); // Mặt phẳng nằm ngang
+
+            function init() {
+                // Tạo scene
+                scene = new THREE.Scene();
+                camera = new THREE.PerspectiveCamera(
+                    75,
+                    window.innerWidth / window.innerHeight,
+                    0.1,
+                    1000
+                );
+                renderer = new THREE.WebGLRenderer();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                document.body.appendChild(renderer.domElement);
+
+                // Ánh sáng
+                const light = new THREE.AmbientLight(0x404040);
+                scene.add(light);
+
+                camera.position.z = 5;
+
+                // Thêm sự kiện cho nút
+                document
+                    .getElementById("addBlock")
+                    .addEventListener("click", addBlock);
+                window.addEventListener("mousedown", onMouseDown);
+                window.addEventListener("mouseup", onMouseUp);
+                window.addEventListener("mousemove", onMouseMove);
+
+                animate();
+            }
+
+            function addBlock() {
+                const geometry = new THREE.BoxGeometry(1, 1, 1);
+                const material = new THREE.MeshBasicMaterial({
+                    color: Math.random() * 0xffffff,
+                });
+                const block = new THREE.Mesh(geometry, material);
+
+                // Đặt vị trí khối
+                block.position.x = (Math.random() - 0.5) * 4;
+                block.position.y = (Math.random() - 0.5) * 4;
+                block.position.z = (Math.random() - 0.5) * 4;
+
+                scene.add(block);
+                blocks.push(block);
+            }
+
+            function onMouseDown(event) {
+                mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+                mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+                raycaster.setFromCamera(mouse, camera);
+                const intersects = raycaster.intersectObjects(blocks);
+
+                if (intersects.length > 0) {
+                    selectedBlock = intersects[0].object;
+                }
+            }
+
+            function onMouseUp() {
+                selectedBlock = null;
+            }
+
+            function onMouseMove(event) {
+                if (selectedBlock) {
+                    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+                    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+                    raycaster.setFromCamera(mouse, camera);
+
+                    // Tìm giao điểm với mặt phẳng
+                    const intersects = raycaster.intersectObject(
+                        new THREE.Mesh(
+                            new THREE.PlaneGeometry(1000, 1000),
+                            new THREE.MeshBasicMaterial({ visible: false })
+                        )
+                    );
+
+                    if (intersects.length > 0) {
+                        selectedBlock.position.copy(intersects[0].point);
+                    }
+                }
+            }
+
+            function animate() {
+                requestAnimationFrame(animate);
+                renderer.render(scene, camera);
+            }
+
+            init();
+        </script>
+    </body>
+</html>

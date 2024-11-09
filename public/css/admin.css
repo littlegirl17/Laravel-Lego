@@ -1,0 +1,1867 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #191c24;
+    width: 100%;
+    height: auto;
+}
+
+.containerfluid {
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #efefef;
+}
+
+.back_admin {
+    background-color: #efefef;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.container-content-admin {
+    margin-left: 230px;
+}
+
+.alertDanger {
+    background-color: #FF5370;
+    color: #FFFFFF;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0px 0px;
+    padding: 7px 10px;
+}
+
+.alertSuccess {
+    background-color: #2ED8B6;
+    color: #FFFFFF;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0px 0px;
+    padding: 7px 10px;
+}
+
+.bg-31629e {
+    background: #31629e;
+}
+
+.headerTop {
+    background-color: #242d37;
+    height: 60px;
+    padding: 0px 0px;
+}
+
+.headerTop img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.headerTop a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.sidebar {
+    background-color: #242d37;
+}
+
+.infocol2 h6 {
+    color: #ffffff;
+}
+
+.infocol2 p {
+    color: #cec3c3;
+}
+
+.infocol2 img {
+    margin-left: 11px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.site-logo {
+    padding-left: 30px;
+}
+
+.header-info ul {
+    padding-left: 150px;
+    display: flex;
+    list-style: none;
+    line-height: 60px;
+}
+
+.header-info ul li a {
+    font-weight: 700;
+    color: #616161;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.main-page {
+    display: flex;
+    position: relative;
+    padding-left: 0 !important;
+}
+
+.header {
+    background-color: #fafafa;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    height: 60px;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, .03), 0 0.9375rem 1.40625rem rgba(4, 9, 20, .03), 0 0.25rem 0.53125rem rgba(4, 9, 20, .05), 0 0.125rem 0.1875rem rgba(4, 9, 20, .03);
+}
+
+.app-main {
+    width: 100%;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 220px;
+    padding: 10px 0px !important;
+    font-weight: 700;
+    border-radius: 0px 5px 5px 0px;
+    z-index: 20;
+}
+
+.sidebar ul {
+    padding: 0 !important;
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    color: #d1d1d1;
+    text-decoration: none;
+    transition: ease-in-out .2s all;
+}
+
+.sidebar ul li:hover {
+    background-color: #c40202;
+}
+
+.sidebar ul li:hover a {
+    color: #ffffff;
+}
+
+.ico-side {
+    margin-right: 10px;
+}
+
+.main-content {
+    padding-left: 232px;
+    padding-bottom: 20px;
+}
+
+.main-content .title-page {
+    padding-top: 20px;
+    color: #ffffff;
+    width: 300px;
+}
+
+.main-content .statistics {
+    box-sizing: border-box;
+    display: flex;
+}
+
+.main-content .statistics a {
+    text-decoration: none;
+}
+
+.widget-chart {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.widget-chart {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.chart {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* table{
+    border: solid 1px #000;
+    border-collapse: collapse;
+}
+.revenue th, td{
+    width: 200px;
+    text-align: center;
+} */
+.chart h4 {
+    margin-bottom: 25px;
+}
+
+.chart span {
+    margin-left: 180px;
+    font-weight: 700;
+}
+
+.form-login {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form-gr {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.addPro .form-group {
+    margin-bottom: 20px;
+}
+
+/**/
+
+/* From Uiverse.io by kamehame-ha */
+.btnFormAdd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    background-color: #007ACC;
+    outline: 3px #007ACC solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    color: white;
+}
+
+.btnFormAdd.text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+}
+
+
+
+.btnFormAdd:hover {
+    background-color: transparent;
+}
+
+.btnFormAdd:hover .text {
+    color: #007ACC;
+}
+
+
+
+/**/
+.pagination {
+    background-color: #191c24;
+}
+
+.pagination li {
+    background-color: #191c24;
+}
+
+/**/
+
+
+/* .orderAdminTr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+} */
+/**/
+.buttonProductForm {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0px;
+    margin-bottom: 20px;
+}
+
+.buttonProductForm .btnF1 {
+    background-color: #FFB64D;
+    border-radius: 0;
+    color: #FFFFFF;
+}
+
+.buttonProductForm .btnF2 {
+    background-color: #FF5370;
+    border-radius: 0;
+    color: #FFFFFF;
+}
+
+.buttonProductForm .btnF3 {
+    background-color: #00BCD4;
+    border-radius: 0;
+    color: #FFFFFF;
+}
+
+.buttonProductForm .btnF4 {
+    background-color: #1e91cf;
+    border-radius: 0;
+    color: #FFFFFF;
+}
+
+.buttonProductForm .btnF1:hover {
+    background-color: #f79f24;
+    color: #FFFFFF;
+
+}
+
+.buttonProductForm .btnF2:hover {
+    background-color: #f72d4f;
+    color: #FFFFFF;
+
+}
+
+.buttonProductForm .btnF3:hover {
+    background-color: #00BCD4;
+    color: #FFFFFF;
+
+}
+
+/**/
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-link {
+    color: #ffffff;
+    /* Màu chữ của các nút phân trang */
+    background-color: transparent;
+    /* Màu nền của các nút phân trang */
+    border-color: #ffffff;
+    /* Màu viền của các nút phân trang */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #31629e;
+    /* Màu nền của nút phân trang được chọn */
+    border-color: #ffffff;
+    /* Màu viền của nút phân trang được chọn */
+}
+
+/**/
+.formAdmin {
+    color: #000;
+}
+
+.formAdminAlert {
+    width: 800px;
+    padding: 20px 20px;
+}
+
+.formAdmin {
+    width: 100%;
+    height: auto;
+    padding: 20px 20px;
+    /* background: linear-gradient(#010101, #000000) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box; */
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    box-sizing: border-box;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+    /* border-radius: 0 25px 0 25px ; */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/**/
+.formadmin {
+    margin-top: 150px;
+}
+
+.form_main {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+    position: relative;
+    overflow: hidden;
+}
+
+.form_main::before {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(90deg, #31629e);
+    transform: rotate(45deg);
+    left: -180px;
+    bottom: 30px;
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+}
+
+.heading {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 5px 0 10px 0;
+    z-index: 2;
+    background: linear-gradient(90deg, #00ffff, #ff00c3);
+    background-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.inputContainer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.inputIcon {
+    position: absolute;
+    left: 3px;
+}
+
+.inputField {
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(173, 173, 173);
+    margin: 10px 0;
+    color: black;
+    font-size: .8em;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+
+.inputField:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(199, 114, 255);
+}
+
+.inputField::placeholder {
+    color: rgb(80, 80, 80);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#button_admin {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    border: none;
+    background-color: #1f508d;
+    height: 30px;
+    color: white;
+    font-size: .8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#button_admin:hover {
+    background-color: #31629e;
+}
+
+.forgotLink {
+    z-index: 2;
+    font-size: .7em;
+    font-weight: 500;
+    color: rgb(44, 24, 128);
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+/**/
+
+
+/**/
+.inputSearch_Admin {
+    width: 250px;
+    background-color: #ffffff;
+    color: #242424;
+    padding: .15rem .5rem;
+    min-height: 40px;
+    outline: none;
+    border: none;
+    line-height: 1.15;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+
+.inputSearch_Admin:hover {
+    outline: 1px solid #c5dcf9;
+}
+
+/**/
+/**/
+.btn-coupon {
+    --color: #31629e;
+    --color2: #ffffff;
+    margin: 15px 0px;
+    padding: 8px 20px;
+    background-color: transparent;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
+}
+
+.btn-coupon::after, .btn-coupon::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+
+.btn-coupon::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn-coupon:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn-coupon:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn-coupon:hover {
+    color: var(--color2);
+}
+
+.btn-coupon:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+}
+
+/**/
+.orderAdminTable {
+    background-color: #F5F5F5;
+    padding: 20px 10px;
+}
+
+.actionAdmin {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0;
+    border: none;
+}
+
+.actionAdminProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nameAdmin p {
+    color: #1E91CF;
+    font-weight: 600;
+    text-align: center;
+}
+
+.employyeeNameRed {
+    color: #ff0000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.actionAdminProduct .btnActionProductAdmin1 {
+
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    background-color: #F38733;
+    color: #ffffff;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.actionAdminProduct .btnActionProductAdmin2 {
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    background-color: #1e91cf;
+    color: #ffffff;
+    border-radius: 0;
+
+}
+
+.btnOrderAdmin a {
+    border: none;
+    margin: 10px -2px;
+}
+
+/**/
+.cardDashboard {
+    padding: 15px 5px;
+    background-color: #F1F1F0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.cardDashboard_1 {
+    background: #ff5370;
+    padding: 10px 5px;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.cardDashboard_1 .backBlur,
+.cardDashboard_2 .backBlur,
+.cardDashboard_3 .backBlur,
+.cardDashboard_4 .backBlur {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.cardDashboard_1 .iconDashboard {
+    display: flex;
+    background-color: #ffffff;
+    width: 50px;
+    height: 80px;
+    color: #ff5370;
+    align-items: center;
+}
+
+.cardDashboard_2 {
+    background: #4099ff;
+    color: #FFFFFF;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.cardDashboard_2 .iconDashboard {
+    display: flex;
+    background-color: #ffffff;
+    width: 50px;
+    height: 80px;
+    color: #4099ff;
+    align-items: center;
+}
+
+.cardDashboard_3 {
+    background: #2ed8b6;
+    color: #FFFFFF;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.cardDashboard_3 .iconDashboard {
+    display: flex;
+    background-color: #ffffff;
+    width: 50px;
+    height: 80px;
+    color: #2ed8b6;
+    align-items: center;
+}
+
+.cardDashboard_4 {
+    background: #ffb64d;
+    color: #FFFFFF;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.cardDashboard_4 .iconDashboard {
+    display: flex;
+    background-color: #ffffff;
+    width: 50px;
+    height: 80px;
+    color: #ffb64d;
+    align-items: center;
+}
+
+.cardDashboard_1 h4,
+.cardDashboard_2 h4,
+.cardDashboard_3 h4,
+.cardDashboard_4 h4 {
+    color: #FFFFFF;
+}
+
+/**/
+.cardTwoDashboard {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 20px 5px 20px 5px;
+}
+
+.cardTwoDashboardItem {
+    /* background-color: #F1F1F0; */
+    padding: 10px 10px;
+    margin: 0 0;
+    height: 130px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.iconCardDash {
+    position: absolute;
+    top: 20px;
+    left: 220px;
+    border-radius: 50%;
+    background-color: #000000;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**/
+.fade-out-left {
+    animation: fade-out-left 0.5s ease-in-out both;
+}
+
+@keyframes fade-out-left {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/**/
+.navPhanTrang {
+    background-color: #FFFFFF;
+}
+
+.navPhanTrang ul {
+    background-color: #FFFFFF;
+
+}
+
+.navPhanTrang ul li {
+    background-color: #FFFFFF;
+
+}
+
+.navPhanTrang .pagination li a {
+    color: #188DD1;
+    background-color: #F0F0F0;
+}
+
+/**/
+.table-header {
+    height: 60px;
+}
+
+.table-header tr {
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+.table-body tr td {
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+.table-body tr td .form-check {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/**/
+.searchAdmin {
+    background-color: #F5F5F5;
+    padding: 0 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 1px;
+}
+
+/**/
+/* Customize the label (the checkbox-btn) */
+.checkbox-btnGroup {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-btnGroup input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-btnGroup label {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: 2.5px solid #000000;
+    transition: .2s linear;
+}
+
+.checkbox-btnGroup input:checked~.checkmark {
+    background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: 50%;
+    top: 40%;
+    width: 10px;
+    height: 14px;
+    border: 2px solid #0ea021;
+    filter: drop-shadow(0px 0px 10px #0ea021);
+    border-width: 0 2.5px 2.5px 0;
+    transition: .2s linear;
+    transform: translate(-50%, -50%) rotate(-90deg) scale(0.2);
+}
+
+/* Show the checkmark when checked */
+.checkbox-btnGroup input:checked~.checkmark:after {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    animation: pulse 1s ease-in;
+}
+
+.checkbox-btnGroup input:checked~.checkmark {
+    transform: rotate(45deg);
+    border: none;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(0deg) scale(1.6);
+    }
+}
+
+/**/
+.bannerImageAdd {
+    background-color: #1f508d;
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.bannerImageAdd label {
+    color: #fff;
+}
+
+/**/
+.bannnerImagesEdit {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+.bannnerImagesEdit .row {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+
+
+.bannnerImagesEdit .row div {
+    padding: 0 0;
+    margin: 0 0;
+
+}
+
+.bannnerImagesEdit .row div:last-child {
+    border-right: none;
+}
+
+.banner_row:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+/**/
+.bg-return {
+    background-color: #ff0000;
+}
+
+/**/
+/* From Uiverse.io by cssbuttons-io */
+.cbx {
+    position: relative;
+    top: 1px;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #c8ccd4;
+    border-radius: 3px;
+    vertical-align: middle;
+    transition: background 0.1s ease;
+    cursor: pointer;
+    display: block;
+}
+
+.cbx:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    /* Đặt vị trí cho dấu tick */
+    left: 10px;
+    /* Đặt vị trí cho dấu tick */
+    width: 7px;
+    height: 14px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    border-right: 2px solid #fff;
+    /* Màu sắc của dấu tick */
+    border-bottom: 2px solid #fff;
+    /* Màu sắc của dấu tick */
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+}
+
+.hidden-xs-up:checked+.cbx {
+    border-color: transparent;
+    background: #6871f1;
+    /* Màu nền khi checked */
+    animation: jelly 0.6s ease;
+}
+
+.hidden-xs-up:checked+.cbx:after {
+    opacity: 1;
+    /* Hiện dấu tick */
+    transform: rotate(45deg) scale(1);
+}
+
+@keyframes jelly {
+    from {
+        transform: scale(1, 1);
+    }
+
+    30% {
+        transform: scale(1.25, 0.75);
+    }
+
+    40% {
+        transform: scale(0.75, 1.25);
+    }
+
+    50% {
+        transform: scale(1.15, 0.85);
+    }
+
+    65% {
+        transform: scale(0.95, 1.05);
+    }
+
+    75% {
+        transform: scale(1.05, 0.95);
+    }
+
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+.hidden-xs-up {
+    display: none;
+    /* Ẩn checkbox thực tế */
+}
+
+
+/**/
+.bg_admin_login {
+    background-color: #f3f4f9;
+    height: 100vh;
+    /* Chiều cao bằng 100% chiều cao của viewport */
+}
+
+.form_admin {
+    margin: 0 auto;
+    width: 400px;
+    padding-top: 80px;
+}
+
+.form_admin_content {
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+        rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    padding: 25px 50px 35px 50px;
+    border-radius: 10px;
+}
+
+.img_login_admin {
+    position: absolute;
+    top: 66px;
+    right: 135px;
+    width: 100px;
+    height: 100px;
+}
+
+.img_login_admin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form_admin_content .title h2 {
+    font-size: 1.8rem;
+    padding-bottom: 100px;
+    text-align: center;
+    background: linear-gradient(to right,
+            #ffc506,
+            #fbc000);
+    /* Phối hợp hai màu */
+    -webkit-background-clip: text;
+    /* Cắt nền theo chữ */
+    -webkit-text-fill-color: transparent;
+    /* Làm cho chữ trong suốt */
+}
+
+.form_admin_item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.form_admin_item label {
+    color: #8e8c8c;
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+
+.form_admin_item input {
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 5px;
+}
+
+.btn_admin_login {
+    width: 100%;
+    background-color: #ffc506;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    /* Để ẩn phần hiệu ứng ra ngoài nút */
+    font-weight: bold;
+    /* Làm cho chữ đậm hơn */
+    transition: color 0.3s ease;
+    /* Thêm hiệu ứng chuyển tiếp cho màu chữ */
+}
+
+.btn_admin_login::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* Bắt đầu từ dưới */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e0a800;
+    /* Màu vàng đậm */
+    transition: top 0.3s ease;
+    /* Thời gian chuyển tiếp */
+    z-index: 0;
+    /* Đặt ở dưới cùng */
+}
+
+.btn_admin_login:hover::before {
+    top: 0;
+    /* Di chuyển lên trên khi hover */
+    z-index: -1;
+}
+
+.btn_admin_login:hover {
+    color: #ffffff;
+    /* Giữ màu chữ khi hover */
+    z-index: 1;
+    /* Đặt nút lên trên cùng */
+}
+
+/**/
+.form_admin_alrt {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+/**/
+.inputFile {
+    background-color: #007ACC;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/**/
+.remove_bannerImages_add {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-ProductImagesAdd {
+    background-color: #007ACC;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+}
+
+.imageAdd {
+    border: 1px solid #dfdddd;
+    border-radius: 5px;
+    display: flex;
+}
+
+.imageFile {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.imageFile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#preview {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+#preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.previewImages {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.previewImages img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/**/
+/* From Uiverse.io by gharsh11032000 */
+.radio-button-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.radio-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-button__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-button__label {
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 15px;
+    color: #a0a0a0;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.radio-button__custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    transition: all 0.3s ease;
+}
+
+.radio-button__input:checked+.radio-button__label .radio-button__custom {
+    background-color: #4c8bf5;
+    border-color: transparent;
+    transform: scale(0.8);
+    box-shadow: 0 0 20px #4c8bf580;
+}
+
+.radio-button__input:checked+.radio-button__label {
+    color: #4c8bf5;
+}
+
+.radio-button__label:hover .radio-button__custom {
+    transform: scale(1.2);
+    border-color: #4c8bf5;
+    box-shadow: 0 0 20px #4c8bf580;
+}
+
+/**/
+.assemblyNew {
+    color: #fff;
+    background-color: #ffc506;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.assemblyDo {
+    color: #fff;
+    background-color: #ff0000;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.assemblySuccess {
+    color: #fff;
+    background-color: #0bb533;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/**/
+.total-order {
+    background-color: #ffc506;
+    color: #000;
+}
+
+.total-order label {
+    color: #000;
+    font-size: 16px;
+}
+
+.total-order div {
+    padding: 10px 20px;
+
+}
+
+/**/
+.dash_row {
+    background-color: #f4f4f4;
+    padding: 17px 10px 10px 10px;
+}
+
+
+.dash_product, .dash_article, .dash_user, .dash_admin {
+    padding: 10px 10px 10px 10px;
+}
+
+
+.dash_product {
+    border: 3px solid #00ffff26;
+    border-radius: 5px;
+    text-align: center;
+
+    background-color: #faf7f7;
+}
+
+.dash_product_header {
+    padding: 5px 15px 10px 15px;
+    background-color: #04f7f7;
+    color: #037e7e;
+    font-weight: 500;
+    width: 100%;
+
+}
+
+.dash_product_main {
+    display: flex;
+}
+
+.dash_product_content {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash_product_content span {}
+
+.dash_product_content p {
+    margin: 0 0;
+    background-color: #04f7f7;
+    color: #fff;
+    font-weight: 500;
+    width: 50px;
+    padding: 12px 3px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+.dash_product_content a {
+    color: #037e7e;
+    font-size: 0.8rem
+}
+
+.dash_product_content a:hover {
+    color: #037e7e;
+}
+
+/**/
+.dash_article {
+    border: 3px solid #f4050517;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #faf7f7;
+}
+
+.dash_article_header {
+    padding: 5px 15px 10px 15px;
+    background-color: #f40505;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+
+}
+
+.dash_article_main {
+    display: flex;
+}
+
+.dash_article_content {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash_article_content span {}
+
+.dash_article_content p {
+    margin: 0 0;
+    background-color: #f40505;
+    color: #fff;
+    font-weight: 500;
+    width: 50px;
+    padding: 12px 3px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+.dash_article_content a {
+    color: #f40505;
+    font-size: 0.8rem
+}
+
+.dash_article_content a:hover {
+    color: #f40505;
+}
+
+/**/
+.dash_user {
+    border: 3px solid #007acc47;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #faf7f7;
+}
+
+.dash_user_header {
+    padding: 5px 15px 10px 15px;
+    background-color: #007ACC;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+
+}
+
+.dash_user_main {
+    display: flex;
+}
+
+.dash_user_content {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash_user_content span {}
+
+.dash_user_content p {
+    margin: 0 0;
+    background-color: #007ACC;
+    color: #fff;
+    font-weight: 500;
+    width: 50px;
+    padding: 12px 3px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+.dash_user_content a {
+    color: #007ACC;
+    font-size: 0.8rem
+}
+
+.dash_user_content a:hover {
+    color: #007ACC;
+}
+
+/**/
+.dash_admin {
+    border: 3px solid #fbc00033;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #faf7f7;
+}
+
+.dash_admin_header {
+    padding: 5px 15px 10px 15px;
+    background-color: #fbc000;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+
+}
+
+.dash_admin_main {
+    display: flex;
+}
+
+.dash_admin_content {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash_admin_content span {}
+
+.dash_admin_content p {
+    margin: 0 0;
+    background-color: #fbc000;
+    color: #fff;
+    font-weight: 500;
+    width: 50px;
+    padding: 12px 3px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+.dash_admin_content a {
+    color: #fbc000;
+    font-size: 0.8rem
+}
+
+.dash_admin_content a:hover {
+    color: #fbc000;
+}
+
+/**/
+/* From Uiverse.io by bimbx */
+/* Hide the default checkbox */
+.containerSlug input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.containerSlug {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    cursor: pointer;
+    font-size: 13px;
+    user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkmarkSlug {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background: #c6c6c6;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.30), 0px 1px 1px rgba(0, 5);
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerSlug input:checked~.checkmarkSlug {
+    background-image: linear-gradient(#00d500, #00d500)
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkSlug:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.containerSlug input:checked~.checkmarkSlug:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerSlug .checkmarkSlug:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid white;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+}
+
+/**/
+.bg_row_dash {
+    background-color: #f4f4f4;
+    padding: 10px 10px;
+}
+
+.dashFavorite10_main {
+    display: flex;
+    margin: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.dashFavorite10_main ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1.25rem;
+    padding: 0 0;
+    margin: 0 0;
+    flex-wrap: wrap;
+}
+
+.dashFavorite10_main ul li {
+    list-style: none;
+    max-width: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashFavorite10_img {
+    width: 100px;
+    height: 100px;
+}
+
+.dashFavorite10_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+    object-fit: cover;
+}
+
+.dashFavorite10_content span {
+    display: -webkit-box;
+    /* Sử dụng box model */
+    -webkit-box-orient: vertical;
+    /* Định hướng theo chiều dọc */
+    -webkit-line-clamp: 2;
+    /* Giới hạn số dòng hiển thị */
+    overflow: hidden;
+    /* Ẩn phần văn bản vượt quá */
+    padding: 0.3125rem 0px;
+    font-size: 0.775rem;
+    line-height: 1.5875rem;
+    color: #393939;
+    text-align: center;
+    height: 60px;
+}
+
+/**/
+.login_forgetpw {
+    padding-top: 5px;
+}
+
+.login_forgetpw a {
+    text-decoration: none;
+    color: #8e8c8c;
+    font-size: 0.8rem;
+}
+
+/**/
+.ExpireCoupon {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.stillValidCoupon {
+    background-color: #00d500;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/**/
+.banner_file {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border-radius: 8px;
+}
+
+.banner_file_img {
+    width: 120px;
+    height: 120px;
+}
+
+.banner_file_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    object-fit: contain;
+}
+
+.custom-file-upload {
+    padding: 5px 12px;
+    cursor: pointer;
+    background-color: #007ACC;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.required_input {
+    color: #ff0000;
+}
+
+/**/
+/* From Uiverse.io by gharsh11032000 */
+/* The switch - the box around the slider */
+.switch_outstanding {
+    font-size: 9px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch_outstanding .input_outstanding {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider_outstanding {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: rgb(241, 240, 240);
+    border-radius: 50px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.slider_outstanding:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    right: 0.3em;
+    bottom: 0.3em;
+    transform: translateX(150%);
+    background-color: #07b842;
+    border-radius: inherit;
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.slider_outstanding:after {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: #ffffff;
+    border-radius: inherit;
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.switch_outstanding .input_outstanding:focus+.slider_outstanding {
+    box-shadow: 0 0 1px #59d102;
+}
+
+.switch_outstanding .input_outstanding:checked+.slider_outstanding:before {
+    transform: translateY(0);
+}
+
+.switch_outstanding .input_outstanding:checked+.slider_outstanding::after {
+    transform: translateX(-150%);
+}
+
+.td_outstanding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.td_outstanding .text_outstanding {
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+/**/
+.product_date {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.product_date span {
+    font-size: 12px;
+}
+
+/**/
+.comment_iamge {
+    width: 250px;
+    height: 250px;
+}
+
+.comment_iamge img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
